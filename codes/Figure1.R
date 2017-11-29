@@ -1,5 +1,4 @@
 
-
 ##########################    PANEL   (A)    #####################################
 
 library(Logolas)
@@ -26,7 +25,7 @@ grid.newpage()
 layout.rows <- 4
 layout.cols <- 3
 top.vp <- viewport(layout=grid.layout(layout.rows, layout.cols,
-                                      widths=unit(rep(6,layout.cols), rep("null", 2)),
+                                      widths=unit(rep(8,layout.cols), rep("null", 2)),
                                       heights=unit(c(20, 20), rep("lines", 2))))
 
 plot_reg <- vpList()
@@ -45,20 +44,24 @@ pushViewport(plot_tree)
 
 seekViewport(paste0("plotlogo", 1))
 Logolas::logomaker(EBF1_disc1,color_profile = color_profile,frame_width = 1,
-          pop_name = 'EBF1_disc1 (Logo)', newpage = FALSE)
+                   pop_name = '', newpage = FALSE,
+                   control = list(totbins = 3, round_off = 1))
 
 seekViewport(paste0("plotlogo", 2))
-Logolas::nlogomaker(EBF1_disc1,logoheight = 'log',color_profile = color_profile,
-           frame_width = 1,pop_name = 'EBF1_disc1 (EDLogo)',
-           bg = bgmat, newpage = FALSE,
-           control = list(gap_ylab=3.5, epsilon = 0.01))
+Logolas::nlogomaker(EBF1_disc1,logoheight = 'wKL', color_profile = color_profile,
+                    frame_width = 1,pop_name = '',
+                    bg = bgmat, newpage = FALSE,
+                    control = list(quant = 0, gap_ylab=3.5,
+                                   epsilon = 0.1, round_off = 1,
+                                   posbins = 2, negbins = 3))
 
 seekViewport(paste0("plotlogo", 3))
-Logolas::nlogomaker(EBF1_disc1,logoheight = 'wKL', color_profile = color_profile,
-           frame_width = 1,pop_name = 'EBF1_disc1 (wKL-Logo)',
-           bg = bgmat, newpage = FALSE,
-           control = list(quant = 0, gap_ylab=3.5, epsilon = 0.1))
-
+Logolas::nlogomaker(EBF1_disc1,logoheight = 'log',color_profile = color_profile,
+                    frame_width = 1,pop_name = '',
+                    bg = bgmat, newpage = FALSE,
+                    control = list(gap_ylab=3.5,
+                                   epsilon = 0.01,
+                                   posbins = 3, negbins = 3, round_off = 1))
 
 ######################    PANEL  (B)   ############################################
 
@@ -76,24 +79,28 @@ color_profile <- list("type" = "per_row",
 
 seekViewport(paste0("plotlogo", 4))
 Logolas::logomaker(m,color_profile = color_profile,frame_width = 1,
-                   pop_name = 'PF00389 motif 2 (Logo)', newpage = FALSE)
+                   pop_name = '', newpage = FALSE,
+                   control = list(totbins = 3))
 
 seekViewport(paste0("plotlogo", 5))
-Logolas::nlogomaker(m, logoheight = "log",
-           color_profile = color_profile,
-           frame_width = 1, pop_name = "PF00389 motif 2 (EDLogo)",
-           newpage = FALSE,
-           control = list(quant = 0.5,
-                          depletion_weight = 0, epsilon = 0.1))
-
-seekViewport(paste0("plotlogo", 6))
 Logolas::nlogomaker(m, logoheight = "wKL",
                     color_profile = color_profile,
-                    frame_width = 1, pop_name = "PF00389 motif 2 (wKL-Logo)",
+                    frame_width = 1, pop_name = "",
                     newpage = FALSE,
                     control = list(quant = 0,
-                                   depletion_weight = 0, epsilon = 0.1))
+                                   depletion_weight = 0, epsilon = 0.1,
+                                   round_off = 1,
+                                   posbins = 2, negbins = 3))
 
+seekViewport(paste0("plotlogo", 6))
+Logolas::nlogomaker(m, logoheight = "log",
+                    color_profile = color_profile,
+                    frame_width = 1, pop_name = "",
+                    newpage = FALSE,
+                    control = list(quant = 0.5,
+                                   depletion_weight = 0, epsilon = 0.1,
+                                   round_off = 1,
+                                   posbins = 3, negbins = 3))
 
 
 ######################    PANEL  (C)   ############################################
@@ -122,31 +129,35 @@ color_profile <- list("type" = "per_symbol",
 
 seekViewport(paste0("plotlogo", 7))
 Logolas::logomaker(table,
-          color_profile = color_profile,
-          frame_width = 1, newpage = FALSE,
-          xlab = "Position",
-          pop_name='B cell mutations (Logo)')
+                   color_profile = color_profile,
+                   frame_width = 1, newpage = FALSE,
+                   xlab = "Position",
+                   pop_name='',
+                   control = list(totbins = 3))
 
 seekViewport(paste0("plotlogo", 8))
-Logolas::nlogomaker(table,
-           logoheight = 'log',
-           color_profile = color_profile,
-           frame_width = 1, newpage = FALSE,
-           xlab = "Position",
-           pop_name = 'B cell mutations (EDLogo)',
-           control = list(epsilon=0.1,
-                          gap_ylab=3.5))
-
-seekViewport(paste0("plotlogo", 9))
 Logolas::nlogomaker(table,
                     logoheight = 'wKL',
                     color_profile = color_profile,
                     frame_width = 1, newpage = FALSE,
                     xlab = "Position",
-                    pop_name = 'B cell mutations (wKL-Logo)',
+                    pop_name = '',
                     control = list(quant = 0, epsilon=0.1,
-                                   gap_ylab=3.5))
+                                   gap_ylab=3.5,
+                                   round_off = 1,
+                                   posbins = 2, negbins = 3))
 
+seekViewport(paste0("plotlogo", 9))
+Logolas::nlogomaker(table,
+                    logoheight = 'log',
+                    color_profile = color_profile,
+                    frame_width = 1, newpage = FALSE,
+                    xlab = "Position",
+                    pop_name = '',
+                    control = list(epsilon=0.1,
+                                   gap_ylab=3.5,
+                                   round_off = 1,
+                                   posbins = 3, negbins = 3))
 
 
 ########################   PANEL (D)   ###################################
@@ -168,45 +179,51 @@ rownames(mat) <- c("H3K4ME1", "H3K4ME2", "H3K4ME3", "H3AC", "H4AC")
 colnames(mat) <- c("Intergenic","Intron","Exon",
                    "Gene start ","Gene end")
 
-set.seed(201)
+set.seed(181)
 color_profile <- list("type" = "per_row",
                       "col" = sample(RColorBrewer::brewer.pal(10,name = "Spectral"),
-                                     dim(mat)[1]))
+                                     dim(mat)[1], replace = FALSE))
 
 seekViewport(paste0("plotlogo", 10))
 Logolas::logomaker(mat,
-          color_profile = color_profile,
-          frame_width = 1,
-          ic.scale = TRUE,
-          pop_name = "Histone marks (Logo)",
-          xlab = "", newpage = FALSE,
-          yscale_change = TRUE,
-          col_line_split = "black",
-          control = list(gap_ylab = 3.5))
+                   color_profile = color_profile,
+                   frame_width = 1,
+                   ic.scale = TRUE,
+                   pop_name = "",
+                   xlab = "Position",
+                   newpage = FALSE,
+                   yscale_change = TRUE,
+                   col_line_split = "black",
+                   control = list(gap_ylab = 3.5,
+                                  totbins = 3))
 
 
 seekViewport(paste0("plotlogo", 11))
 Logolas::nlogomaker(mat,
-                    logoheight = 'unscaled_log',
+                    logoheight = 'wKL',
                     bg = bgmat,
                     color_profile = color_profile,
                     frame_width = 1, newpage = FALSE,
                     xlab = "Position",
-                    pop_name = 'Histone marks (EDLogo, unscaled)',
-                    control = list(epsilon=0.1,
-                                   gap_ylab=3.5))
+                    pop_name = '',
+                    control = list(quant = 0, epsilon=0.1,
+                                   gap_ylab=3.5,
+                                   round_off = 1,
+                                   posbins = 2, negbins = 3))
 
 
 seekViewport(paste0("plotlogo", 12))
 Logolas::nlogomaker(mat,
-                    logoheight = 'unscaled_log',
+                    logoheight = 'log',
                     bg = bgmat,
                     color_profile = color_profile,
                     frame_width = 1, newpage = FALSE,
                     xlab = "Position",
-                    pop_name = 'Histone marks (wKL-Logo, unscaled)',
-                    control = list(quant = 0, epsilon=0.1,
-                                   gap_ylab=3.5))
+                    pop_name = '',
+                    control = list(epsilon=0.1,
+                                   gap_ylab=3.5,
+                                   round_off = 2,
+                                   posbins = 3, negbins = 3))
 
 
 ##########  save this file in R pdf as 22 by 17   ########################

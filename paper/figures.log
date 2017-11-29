@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  26 OCT 2017 23:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  14 NOV 2017 11:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -591,35 +591,64 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 ) [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<../figures/Figure1.pdf, id=11, 1589.94pt x 1228.59pt>
-File: ../figures/Figure1.pdf Graphic file (type pdf)
+<../figures/Figure4/Figure4_2.pdf, id=11, 1027.84pt x 770.88pt>
+File: ../figures/Figure4/Figure4_2.pdf Graphic file (type pdf)
 
-<use ../figures/Figure1.pdf>
-Package pdftex.def Info: ../figures/Figure1.pdf used on input line 24.
-(pdftex.def)             Requested size: 505.87994pt x 433.61232pt.
+<use ../figures/Figure4/Figure4_2.pdf>
+Package pdftex.def Info: ../figures/Figure4/Figure4_2.pdf used on input line 24
+.
+(pdftex.def)             Requested size: 505.88876pt x 433.61894pt.
 
-Overfull \hbox (126.46245pt too wide) in paragraph at lines 24--26
+Overfull \hbox (126.47127pt too wide) in paragraph at lines 24--26
+ [][] 
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+<../figures/Figure1/Figure1_3.pdf, id=12, 1027.84pt x 770.88pt>
+File: ../figures/Figure1/Figure1_3.pdf Graphic file (type pdf)
+
+<use ../figures/Figure1/Figure1_3.pdf>
+Package pdftex.def Info: ../figures/Figure1/Figure1_3.pdf used on input line 32
+.
+(pdftex.def)             Requested size: 505.88876pt x 433.61894pt.
+
+Overfull \hbox (126.47127pt too wide) in paragraph at lines 32--34
  [][] 
  []
 
 
-LaTeX Warning: Citation `Alexandrov2013' on page 2 undefined on input line 26.
+LaTeX Warning: Citation `Alexandrov2013' on page 2 undefined on input line 34.
 
 
-LaTeX Warning: Citation `Koch2007' on page 2 undefined on input line 26.
+LaTeX Warning: Citation `Koch2007' on page 2 undefined on input line 34.
 
 
-LaTeX Warning: Float too large for page by 54.24983pt on input line 28.
+LaTeX Warning: Float too large for page by 54.25645pt on input line 36.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
-[2 <../figures/Figure1.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
- (./figures.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
+[2 <../figures/Figure4/Figure4_2.pdf>] [3 <../figures/Figure1/Figure1_3.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
+
+(./figures.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
 Package rerunfilecheck Info: File `figures.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -629,24 +658,26 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
  ) 
 Here is how much of TeX's memory you used:
- 10271 strings out of 493014
- 157967 string characters out of 6133351
- 294610 words of memory out of 5000000
- 13671 multiletter control sequences out of 15000+600000
- 5319 words of font info for 24 fonts, out of 8000000 for 9000
+ 10342 strings out of 493014
+ 159477 string characters out of 6133351
+ 299930 words of memory out of 5000000
+ 13713 multiletter control sequences out of 15000+600000
+ 7069 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,41p,1955b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,7n,45p,1938b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on figures.pdf (2 pages, 1027437 bytes).
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on figures.pdf (3 pages, 4120692 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 5638 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 88 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 6667 words of extra memory for PDF output out of 10000 (max. 10000000)
 

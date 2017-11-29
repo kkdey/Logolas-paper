@@ -1,0 +1,6 @@
+EBF1_disc1 EBF1_GM12878_encode-Snyder_seq_hsa_r1:MDscan#1#Intergenic
+EBF1_disc2 EBF1_GM12878_encode-Snyder_seq_hsa_r1:AlignACE#2#Intergenic
+EBF1_known1	EBF1_1	Olf-1_transfac_M00261
+EBF1_known2	EBF1_2	EBF_transfac_M00977
+EBF1_known3	EBF1_3	EBF1_jaspar_MA0154.1
+EBF1_known4	EBF1_4	EBF1_jolma_full_M79

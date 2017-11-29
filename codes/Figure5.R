@@ -69,7 +69,7 @@ pwm_mt2 = pwm389[,257:267]
 
 library(grid)
 grid.newpage()
-layout.rows <- 3
+layout.rows <- 4
 layout.cols <- 2
 top.vp <- viewport(layout=grid.layout(layout.rows, layout.cols,
                                       widths=unit(rep(6,layout.cols), rep("null", 2)),
@@ -91,33 +91,65 @@ pushViewport(plot_tree)
 
 
 library(Logolas)
-#log odds
+#log
 seekViewport(paste0("plotlogo", 1))
-nlogomaker(pwm_mt2,logoheight = 'log_odds',color_profile = color_profile,
-           newpage = FALSE, pop_name = "PF00389 motif 2 (log odds)")
-#ratio
+nlogomaker(pwm_mt2,logoheight = 'log',color_profile = color_profile,
+           newpage = FALSE, pop_name = "", control = list(round_off = 0),
+           col_line_split = "white",
+           xaxis = FALSE)
+#ic log
 seekViewport(paste0("plotlogo", 2))
-nlogomaker(pwm_mt2,logoheight = 'ratio',color_profile = color_profile,
-           newpage = FALSE, pop_name = "PF00389 motif 2 (ratio)")
-#ic log
-seekViewport(paste0("plotlogo", 3))
 nlogomaker(pwm_mt2,logoheight = 'ic_log',color_profile = color_profile,
-           newpage = FALSE, pop_name = "PF00389 motif 2 (ic log)")
-#ic log
-seekViewport(paste0("plotlogo", 4))
-nlogomaker(pwm_mt2,logoheight = 'ic_ratio',color_profile = color_profile,
-           newpage = FALSE, pop_name = "PF00389 motif 2 (ic ratio)")
-# probKL
-seekViewport(paste0("plotlogo", 5))
-nlogomaker(pwm_mt2,logoheight = 'ic_log_odds',color_profile = color_profile,
-           newpage = FALSE, pop_name = "PF00389 motif 2 (ic log odds)")
-# weighted KL
-seekViewport(paste0("plotlogo", 6))
-nlogomaker(pwm_mt2,logoheight = 'probKL',color_profile = color_profile,
-           control = list(quant=0.5), pop_name = "PF00389 motif 2 (probKL)",
-           newpage = FALSE)
+           newpage = FALSE, pop_name = "", control = list(round_off = 1,
+                                                          symm = TRUE),
+           col_line_split = "white",
+           xaxis = FALSE)
 
-#########  save the plot as pdf 20 by 15   ######################
+# log odds
+seekViewport(paste0("plotlogo", 3))
+nlogomaker(pwm_mt2,logoheight = 'log_odds',color_profile = color_profile,
+           newpage = FALSE, pop_name = "", control = list(round_off = 0),
+           col_line_split = "white",
+           xaxis = FALSE)
+# ic log odds
+seekViewport(paste0("plotlogo", 4))
+nlogomaker(pwm_mt2,logoheight = 'ic_log_odds',color_profile = color_profile,
+           control = list(quant=0.5, round_off = 1, symm = TRUE), pop_name = "",
+           newpage = FALSE,
+           col_line_split = "white",
+           xaxis = FALSE)
+
+#ratio
+seekViewport(paste0("plotlogo", 5))
+nlogomaker(pwm_mt2,logoheight = 'ratio',color_profile = color_profile,
+           newpage = FALSE, pop_name = "", control = list(round_off = 0),
+           col_line_split = "white",
+           xaxis = FALSE)
+#ic ratio
+seekViewport(paste0("plotlogo", 6))
+nlogomaker(pwm_mt2,logoheight = 'ic_ratio',color_profile = color_profile,
+           newpage = FALSE, pop_name = "", control = list(round_off = 1,
+                                                          symm = TRUE),
+           col_line_split = "white",
+           xaxis = FALSE)
+
+seekViewport(paste0("plotlogo", 7))
+nlogomaker(pwm_mt2,logoheight = 'probKL',color_profile = color_profile,
+           control = list(quant=0.5, round_off = 1), pop_name = "",
+           newpage = FALSE, col_line_split = "white",
+           xaxis = FALSE)
+
+
+seekViewport(paste0("plotlogo", 8))
+nlogomaker(pwm_mt2,logoheight = 'ic_probKL',color_profile = color_profile,
+           control = list(quant=0.5, round_off = 1, symm = TRUE),
+           pop_name = "", newpage = FALSE, col_line_split = "white",
+           xaxis = FALSE)
+
+
+
+
+#########  save the plot as pdf 20 by 17   ######################
 
 
 

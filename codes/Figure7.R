@@ -28,10 +28,12 @@ table = rbind(mat1, mat2)
 #logomaker(table,color_profile = color_profile,frame_width = 1,pop_name = paste('logo plot',name))
 
 nlogomaker(table,
-           logoheight = 'log',
+           logoheight = 'ic_ratio',
            color_profile = color_profile,
            frame_width = 1,
            xlab = "Position",
            pop_name = '',
-           #control = list(epsilon=0.25,gap_ylab=3.5)
+           control = list(epsilon=0.25,gap_ylab=3.5,
+                          round_off = 0),
+           xaxis = FALSE
 )

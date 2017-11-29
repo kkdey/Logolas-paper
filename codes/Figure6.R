@@ -15,8 +15,8 @@ color_profile <- list("type" = "per_symbol",
                       "col" = sample(col_vector, length(total_chars), replace=FALSE))
 
 grid.newpage()
-layout.rows <- 4
-layout.cols <- 6
+layout.rows <- 6
+layout.cols <- 4
 top.vp <- viewport(layout=grid.layout(layout.rows, layout.cols,
                                       widths=unit(rep(5,layout.cols), rep("null", 2)),
                                       heights=unit(rep(5,layout.rows), rep("null", 1))))
@@ -81,6 +81,12 @@ for(j in 1:length(files)){
              xlab = "Position",
              newpage = F,
              pop_name = paste(name),
-             control = list(epsilon=0.2,gap_ylab=3.5)
+             xaxis = FALSE,
+             control = list(epsilon=0.2,gap_ylab=3.5, round_off = 0)
   )
 }
+
+
+################   save as 25 by 20   ##########################
+
+

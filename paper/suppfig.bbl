@@ -1,0 +1,49 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alexandrov et~al.(2013)Alexandrov, Nik-Zainal, Wedge, Campbell, and
+  Stratton]{Alexandrov2013}
+L.~Alexandrov, G.~Nik-Zainal, D.~Wedge, P.~Campbell, and M.~Stratton.
+\newblock Deciphering signatures of mutational processes operative in human
+  cancer.
+\newblock \emph{Cell Reports}, 3(1):\penalty0 246--259, 2013.
+
+\bibitem[Jolma et~al.(2013)Jolma, Yan, Whitington, Toivonen, Nitta, Rastas,
+  Morgunova, Enge, Taipale, Wei, and et~al.]{Jolma2013}
+A.~Jolma, J.~Yan, T.~Whitington, J.~Toivonen, KR. Nitta, P.~Rastas,
+  E.~Morgunova, M.~Enge, M.~Taipale, G.~Wei, and et~al.
+\newblock Dna-binding specificities of human transcription factors.
+\newblock \emph{Cell}, 152:\penalty0 327--339, 2013.
+
+\bibitem[Kheradpour and Kellis(2013)]{Kheradpour2013}
+P.~Kheradpour and M.~Kellis.
+\newblock Systematic discovery and characterization of regulatory motifs in
+  encode tf binding experiments.
+\newblock \emph{Nucleic Acids Research}, pages 1--12, 2013.
+
+\bibitem[Sandelin et~al.(2004)Sandelin, Wynand, Engstrom, W.W., and
+  Lenhard]{Sandelin2004}
+A.~Sandelin, A.~Wynand, Par Engstrom, Wasserman W.W., and B.~Lenhard.
+\newblock Jaspar: an open-access database for eukaryotic transcription factor
+  binding profiles.
+\newblock \emph{Nucleic Acids Research}, 32 (Database issue):\penalty0
+  D91--D94, 2004.
+
+\bibitem[Shiraishi et~al.(2015)Shiraishi, Tremmel, Miyano, and
+  Stephens]{Shiraishi2015}
+Y.~Shiraishi, G.~Tremmel, s.~Miyano, and M.~Stephens.
+\newblock A simple model-based approach to inferring and visualizing cancer
+  mutation signatures.
+\newblock \emph{PLoS Genetics}, 11(12):\penalty0 e1005657, 2015.
+
+\bibitem[Wingender et~al.(2000)Wingender, Chen, Hehl, and
+  et~al.]{Wingender2000}
+E.~Wingender, X.~Chen, R.~Hehl, and et~al.
+\newblock Transfac: an integrated system for gene expression regulation.
+\newblock \emph{Nucleic Acids Research}, 28(1):\penalty0 316--319, 2000.
+
+\end{thebibliography}
